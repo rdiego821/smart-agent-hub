@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: smart-agent-backend
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: mistral # Modelo open-source ligero y excelente en español
+    vectorstore:
+      chroma:
+        client:
+          host: http://localhost
+          port: 8000

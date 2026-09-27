@@ -1,0 +1,36 @@
+# --- Java & Maven ---
+/backend/target/
+*.class
+*.log
+hs_err_pid*
+
+# --- Node.js & Frontend (React / Vite) ---
+/frontend/node_modules/
+/frontend/dist/
+/frontend/build/
+.npm
+.eslintcache
+
+# --- IDEs & Editors ---
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+
+# --- Operating System Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- Environment & Local Secrets ---
+.env
+.env.local
+*.pem

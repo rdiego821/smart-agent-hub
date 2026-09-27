@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  # Motor de Inteligencia Artificial Local (Ollama)
+  ollama:
+    image: ollama/ollama:latest
+    container_name: local_ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+
+  # Base de Datos Vectorial para RAG (ChromaDB)
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: local_chromadb
+    ports:
+      - "8000:8000"
+    environment:
+      - IS_PERSISTENT=TRUE
+    volumes:
+      - chroma_data:/chroma/chroma
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
+  chroma_data:
