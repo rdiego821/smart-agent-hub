@@ -36,10 +36,12 @@
         </dependency>
 
         <!-- Spring AI Starter para Chroma (Base de Datos Vectorial) -->
+        <!--
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-chroma-store-spring-boot-starter</artifactId>
         </dependency>
+        -->
 
         <!-- Testing Dependencies -->
         <dependency>

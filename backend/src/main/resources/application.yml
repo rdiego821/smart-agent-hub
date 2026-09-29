@@ -9,7 +9,7 @@ spring:
       base-url: http://localhost:11434
       chat:
         options:
-          model: mistral # Modelo open-source ligero y excelente en español
+          model: phi3
     vectorstore:
       chroma:
         client:
