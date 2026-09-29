@@ -10,8 +10,12 @@ spring:
       chat:
         options:
           model: phi3
+      embedding:
+        options:
+          model: nomic-embed-text
     vectorstore:
       chroma:
         client:
           host: http://localhost
           port: 8000
+        initialize-schema: true
